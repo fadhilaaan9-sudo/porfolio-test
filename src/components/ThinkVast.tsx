@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import CountUp from "./CountUp";
+import WalkingFigure from "./WalkingFigure";
 import { skillGroups } from "../data/portfolio";
 
 const stats = [
@@ -11,7 +12,11 @@ const stats = [
 
 export default function ThinkVast() {
   return (
-    <section id="about" className="bg-studio-mist">
+    <section id="about" className="relative bg-studio-mist">
+      <WalkingFigure
+        variant="sit"
+        className="bottom-4 right-4 hidden w-[100px] opacity-25 md:block md:w-[130px] lg:right-12"
+      />
       <div className="mx-auto max-w-6xl px-6 py-20 text-center md:py-[90px]">
         <Reveal>
           <p className="text-[12px] font-semibold uppercase tracking-[0.08em] text-slate">

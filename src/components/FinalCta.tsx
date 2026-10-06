@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import WalkingFigure from "./WalkingFigure";
 import { profile } from "../data/portfolio";
 
 const socials = [
@@ -10,7 +11,11 @@ const socials = [
 
 export default function FinalCta() {
   return (
-    <section id="contact" className="bg-gallery-white">
+    <section id="contact" className="relative bg-gallery-white">
+      <WalkingFigure
+        variant="wave"
+        className="bottom-6 left-4 w-[95px] md:bottom-10 md:left-12 md:w-[135px]"
+      />
       <div className="mx-auto max-w-4xl px-6 py-24 text-center md:py-[140px]">
         <Reveal>
           <h2 className="font-sf-pro-display text-[56px] font-semibold leading-[1.02] tracking-[-0.02em] text-ink md:text-[80px]">

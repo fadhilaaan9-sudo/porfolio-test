@@ -278,3 +278,75 @@ section[id] {
     display: none;
   }
 }
+
+/* Sitting / typing figure */
+.typer-hands {
+  transform-box: view-box;
+  transform-origin: 146px 118px;
+  animation: typer 0.45s ease-in-out infinite;
+}
+@keyframes typer {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+.typer-head {
+  transform-box: view-box;
+  transform-origin: 120px 78px;
+  animation: typer-nod 2.4s ease-in-out infinite;
+}
+@keyframes typer-nod {
+  0%,
+  100% {
+    transform: rotate(3deg);
+  }
+  50% {
+    transform: rotate(-3deg);
+  }
+}
+
+/* Waving figure */
+.wave-bounce {
+  animation: wave-bounce 0.9s ease-in-out infinite;
+}
+@keyframes wave-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.wave-hand {
+  transform-box: view-box;
+  transform-origin: 152px 44px;
+  animation: wave-hand 0.7s ease-in-out infinite;
+}
+@keyframes wave-hand {
+  0%,
+  100% {
+    transform: rotate(-16deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+}
+.wave-bubble {
+  transform-box: view-box;
+  transform-origin: 47px 22px;
+  animation: wave-bubble 2.4s ease-in-out infinite;
+}
+@keyframes wave-bubble {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.03);
+  }
+}
