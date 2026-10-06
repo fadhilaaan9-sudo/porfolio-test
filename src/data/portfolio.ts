@@ -78,7 +78,7 @@ export const projects: Project[] = [
     description:
       "A real-time analytics dashboard helping 200+ small retailers track sales, stock, and staff performance from any device.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Recharts", "WebSocket"],
-    accent: "#0071e3",
+    accent: "#b64400",
     demoUrl: "#",
     sourceUrl: "#",
     caseStudy: {
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     description:
       "A token-based design system unifying 3 products under one visual language — with docs, tests, and Figma parity.",
     tech: ["React", "Storybook", "Radix UI", "Figma API"],
-    accent: "#0066cc",
+    accent: "#b64400",
     demoUrl: "#",
     sourceUrl: "#",
     caseStudy: {
@@ -165,7 +165,7 @@ export const projects: Project[] = [
     description:
       "Real-time transcription and auto-summarized meeting notes, with shareable highlights and action items.",
     tech: ["React", "TypeScript", "WebSocket", "Tailwind CSS"],
-    accent: "#1d1d1f",
+    accent: "#b64400",
     demoUrl: "#",
     sourceUrl: "#",
     caseStudy: {

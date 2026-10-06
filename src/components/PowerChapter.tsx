@@ -34,7 +34,7 @@ export default function PowerChapter() {
                   <h3 className="font-sf-pro-display text-[21px] font-semibold text-ink md:text-[24px]">
                     {e.role}
                   </h3>
-                  <p className="mt-1 text-[15px] text-apple-blue">{e.company}</p>
+                  <p className="mt-1 text-[15px] text-accent">{e.company}</p>
                   <p className="mt-3 max-w-2xl text-body-small text-slate">
                     {e.description}
                   </p>

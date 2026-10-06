@@ -22,7 +22,7 @@ export default function FinalCta() {
           <div className="mt-10">
             <a
               href={`mailto:${profile.email}`}
-              className="inline-block rounded-full bg-pricing-blue px-10 py-4 text-[17px] font-medium text-white transition-transform hover:scale-[1.03]"
+              className="inline-block rounded-full bg-accent px-10 py-4 text-[17px] font-medium text-white transition-all hover:scale-[1.03] hover:bg-accent-deep"
             >
               {profile.email}
             </a>
@@ -34,7 +34,7 @@ export default function FinalCta() {
                 href={s.href}
                 target="_blank"
                 rel="noreferrer"
-                className="text-[15px] text-apple-blue"
+                className="text-[15px] text-accent"
               >
                 {s.label}
               </a>

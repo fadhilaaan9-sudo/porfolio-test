@@ -26,11 +26,11 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
             <a
               href="#contact"
-              className="rounded-full bg-pricing-blue px-7 py-3 text-[15px] font-medium text-white transition-transform hover:scale-[1.03]"
+              className="rounded-full bg-accent px-7 py-3 text-[15px] font-medium text-white transition-all hover:scale-[1.03] hover:bg-accent-deep"
             >
               Hire me
             </a>
-            <a href="#work" className="text-[17px] text-apple-blue">
+            <a href="#work" className="text-[17px] text-accent">
               See the work &rarr;
             </a>
           </div>

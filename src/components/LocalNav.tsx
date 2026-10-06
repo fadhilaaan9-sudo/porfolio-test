@@ -30,7 +30,7 @@ export default function LocalNav() {
         </div>
         <a
           href="#contact"
-          className="rounded-full bg-pricing-blue px-4 py-1.5 text-compact-control text-white"
+          className="rounded-full bg-accent px-4 py-1.5 text-compact-control text-white transition-colors hover:bg-accent-deep"
         >
           Hire me
         </a>

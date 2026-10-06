@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between gap-4 pt-8 text-[12px] text-slate md:flex-row">
           <p>&copy; 2026 Ferhen. All rights reserved.</p>
           <p>Designed &amp; built with React + Tailwind CSS</p>
-          <a href="#top" className="text-apple-blue">
+          <a href="#top" className="text-accent">
             Back to top &uarr;
           </a>
         </div>

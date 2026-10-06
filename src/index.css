@@ -106,7 +106,7 @@ section[id] {
 }
 
 ::selection {
-  background: var(--color-pricing-blue);
+  background: var(--color-accent);
   color: #ffffff;
 }
 
@@ -143,4 +143,10 @@ section[id] {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+@theme {
+  /* Accent — Launch Orange elevated to primary accent (white + orange direction) */
+  --color-accent: #b64400;
+  --color-accent-deep: #933a04;
 }

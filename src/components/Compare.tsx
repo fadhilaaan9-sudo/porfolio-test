@@ -23,7 +23,7 @@ export default function Compare() {
               <div
                 className={`flex h-full flex-col rounded-[28px] p-8 ${
                   s.featured
-                    ? "bg-ink text-white"
+                    ? "bg-accent text-white"
                     : "border border-hairline-silver bg-gallery-white"
                 }`}
               >
@@ -62,7 +62,7 @@ export default function Compare() {
                     <li key={f.label} className="flex items-start gap-3">
                       <span
                         className={`mt-1 text-[14px] font-semibold ${
-                          f.included ? "text-pricing-blue" : s.featured ? "text-white/40" : "text-steel"
+                          f.included ? "text-accent" : s.featured ? "text-white/40" : "text-steel"
                         }`}
                       >
                         {f.included ? "✓" : "—"}
@@ -90,10 +90,10 @@ export default function Compare() {
                 </ul>
                 <a
                   href="#contact"
-                  className={`mt-8 rounded-full py-3 text-center text-[15px] font-medium ${
+                  className={`mt-8 rounded-full py-3 text-center text-[15px] font-medium transition-colors ${
                     s.featured
-                      ? "bg-pricing-blue text-white"
-                      : "border border-steel text-ink"
+                      ? "bg-white text-accent hover:bg-studio-mist"
+                      : "border border-accent text-accent hover:bg-accent hover:text-white"
                   }`}
                 >
                   {s.cta}
