@@ -174,3 +174,107 @@ section[id] {
     animation: none;
   }
 }
+
+/* Walking figure — line-art walk cycle */
+.walker-traverse {
+  animation: walker-traverse 30s linear infinite;
+}
+@keyframes walker-traverse {
+  from {
+    transform: translateX(-220px);
+  }
+  to {
+    transform: translateX(calc(100vw + 220px));
+  }
+}
+
+.walker-bob {
+  animation: walker-bob 0.55s ease-in-out infinite;
+}
+@keyframes walker-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.walker-shadow {
+  transform-box: view-box;
+  transform-origin: 122px 244px;
+  animation: walker-shadow 0.55s ease-in-out infinite;
+}
+@keyframes walker-shadow {
+  0%,
+  100% {
+    transform: scaleX(1);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scaleX(0.88);
+    opacity: 0.35;
+  }
+}
+
+.walker-leg-a,
+.walker-leg-b,
+.walker-arm-a,
+.walker-arm-b,
+.walker-torso {
+  transform-box: view-box;
+}
+.walker-leg-a {
+  transform-origin: 122px 120px;
+  animation: walker-swing-a 1.1s ease-in-out infinite;
+}
+.walker-leg-b {
+  transform-origin: 122px 120px;
+  animation: walker-swing-b 1.1s ease-in-out infinite;
+}
+.walker-arm-a {
+  transform-origin: 128px 62px;
+  animation: walker-swing-b 1.1s ease-in-out infinite;
+}
+.walker-arm-b {
+  transform-origin: 128px 62px;
+  animation: walker-swing-a 1.1s ease-in-out infinite;
+}
+.walker-torso {
+  transform-origin: 122px 120px;
+  animation: walker-lean 1.1s ease-in-out infinite;
+}
+@keyframes walker-swing-a {
+  0%,
+  100% {
+    transform: rotate(24deg);
+  }
+  50% {
+    transform: rotate(-24deg);
+  }
+}
+@keyframes walker-swing-b {
+  0%,
+  100% {
+    transform: rotate(-24deg);
+  }
+  50% {
+    transform: rotate(24deg);
+  }
+}
+@keyframes walker-lean {
+  0%,
+  100% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .walker-decor {
+    display: none;
+  }
+}

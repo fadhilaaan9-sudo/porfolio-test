@@ -1,6 +1,7 @@
 import CountUp from "./CountUp";
 import ProjectVisual from "./ProjectVisual";
 import Reveal from "./Reveal";
+import WalkingFigure from "./WalkingFigure";
 import { profile } from "../data/portfolio";
 
 const specs = [
@@ -12,17 +13,7 @@ const specs = [
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-gallery-white">
-      <video
-        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
-        src="/hero-walk.mp4"
-        poster="/hero-walk-poster.jpg"
-        autoPlay
-        muted
-        loop
-        playsInline
-        aria-hidden="true"
-      />
-      <div className="absolute inset-0 bg-white/80" aria-hidden="true" />
+      <WalkingFigure />
       <div className="relative mx-auto max-w-6xl px-6 pb-14 pt-28 text-center md:pt-36">
         <p
           className="rise text-[12px] font-semibold tracking-[-0.12px] text-accent"
