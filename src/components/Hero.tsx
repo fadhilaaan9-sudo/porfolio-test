@@ -11,8 +11,19 @@ const specs = [
 
 export default function Hero() {
   return (
-    <section id="top" className="bg-gallery-white">
-      <div className="mx-auto max-w-6xl px-6 pb-14 pt-28 text-center md:pt-36">
+    <section id="top" className="relative overflow-hidden bg-gallery-white">
+      <video
+        className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+        src="/hero-walk.mp4"
+        poster="/hero-walk-poster.jpg"
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-white/80" aria-hidden="true" />
+      <div className="relative mx-auto max-w-6xl px-6 pb-14 pt-28 text-center md:pt-36">
         <p
           className="rise text-[12px] font-semibold tracking-[-0.12px] text-accent"
           style={{ animationDelay: "0ms" }}
