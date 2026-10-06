@@ -1,11 +1,12 @@
 import Reveal from "./Reveal";
+import CountUp from "./CountUp";
 import { skillGroups } from "../data/portfolio";
 
 const stats = [
-  { value: "6+", label: "Years of experience" },
-  { value: "40+", label: "Components shipped" },
-  { value: "20+", label: "Happy clients" },
-  { value: "120+", label: "Open-source PRs" },
+  { value: 6, suffix: "+", label: "Years of experience" },
+  { value: 40, suffix: "+", label: "Components shipped" },
+  { value: 20, suffix: "+", label: "Happy clients" },
+  { value: 120, suffix: "+", label: "Open-source PRs" },
 ];
 
 export default function ThinkVast() {
@@ -38,7 +39,7 @@ export default function ThinkVast() {
             {stats.map((s) => (
               <div key={s.label}>
                 <p className="font-sf-pro-display text-[32px] font-semibold text-ink md:text-[40px]">
-                  {s.value}
+                  <CountUp to={s.value} suffix={s.suffix} />
                 </p>
                 <p className="mt-1 text-[12px] text-slate md:text-body-small">{s.label}</p>
               </div>

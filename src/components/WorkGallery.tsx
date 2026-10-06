@@ -29,7 +29,7 @@ export default function WorkGallery({ onCaseStudy }: WorkGalleryProps) {
           {projects.map((p, i) => (
             <article
               key={p.id}
-              className="w-[85%] shrink-0 snap-center rounded-[28px] bg-studio-mist p-6 sm:w-[70%] md:p-8 lg:w-[480px]"
+              className="w-[85%] shrink-0 snap-center rounded-[28px] bg-studio-mist p-6 transition-transform duration-500 ease-out hover:-translate-y-1.5 sm:w-[70%] md:p-8 lg:w-[480px]"
             >
               <ProjectVisual accent={p.accent} variant={i} />
               <div className="px-1 pt-6 text-left md:px-2">
