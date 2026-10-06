@@ -14,7 +14,7 @@ export default function FinalCta() {
     <section id="contact" className="relative bg-gallery-white">
       <WalkingFigure
         variant="wave"
-        className="bottom-6 left-4 w-[95px] md:bottom-10 md:left-12 md:w-[135px]"
+        className="bottom-6 left-4 hidden w-[95px] sm:block md:bottom-10 md:left-12 md:w-[135px]"
       />
       <div className="mx-auto max-w-4xl px-6 py-24 text-center md:py-[140px]">
         <Reveal>

@@ -25,7 +25,7 @@ export default function WorkGallery({ onCaseStudy }: WorkGalleryProps) {
       </div>
 
       <Reveal>
-        <div className="no-scrollbar flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-4 md:justify-center">
+        <div className="no-scrollbar flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-4">
           {projects.map((p, i) => (
             <article
               key={p.id}
