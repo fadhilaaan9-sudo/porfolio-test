@@ -135,3 +135,12 @@ section[id] {
     transition: none;
   }
 }
+
+/* Hide scrollbars for horizontal galleries */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
