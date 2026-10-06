@@ -2,7 +2,19 @@ export default function Footer() {
   return (
     <footer className="bg-studio-mist">
       <div className="mx-auto max-w-6xl px-6 pb-10 pt-12">
-        <div className="space-y-2 border-b border-hairline-silver pb-8 text-[12px] leading-[1.6] text-slate">
+        <p className="border-b border-hairline-silver pb-8 text-[13px] leading-[1.6] text-slate">
+          P.S. This site practices what it preaches — semantic HTML, structured
+          data, meta tags, sitemap, and a 100-point Lighthouse target.{" "}
+          <a
+            href="https://pagespeed.web.dev/analysis?url=https://ferhen.dev/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-accent"
+          >
+            Run the test &rarr;
+          </a>
+        </p>
+        <div className="space-y-2 border-b border-hairline-silver py-8 text-[12px] leading-[1.6] text-slate">
           <p>
             1. Statistics, testimonials, and project details on this page are placeholder
             content for demonstration purposes.
