@@ -1,0 +1,153 @@
+import { useEffect, useRef, useState } from "react";
+import { profile } from "../data/portfolio";
+
+const links = [
+  { label: "Work", href: "#work", id: "work" },
+  { label: "About", href: "#about", id: "about" },
+  { label: "Services", href: "#services", id: "services" },
+  { label: "FAQ", href: "#faq", id: "faq" },
+];
+
+export default function LocalNav() {
+  const [mounted, setMounted] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [active, setActive] = useState("top");
+  const [open, setOpen] = useState(false);
+  const lastY = useRef(0);
+
+  useEffect(() => {
+    const t = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(t);
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY;
+      setHidden(y > 260 && y > lastY.current && !open);
+      lastY.current = y;
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [open]);
+
+  useEffect(() => {
+    const ids = ["top", "work", "about", "experience", "services", "faq", "contact"];
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActive(e.target.id);
+        });
+      },
+      { rootMargin: "-35% 0px -60% 0px" }
+    );
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
+    return () => obs.disconnect();
+  }, []);
+
+  return (
+    <div className="pointer-events-none fixed inset-x-0 top-3 z-50 flex justify-center px-4 md:top-5">
+      <div
+        className={`pointer-events-auto w-full max-w-4xl transition-all duration-500 ease-out ${
+          hidden ? "-translate-y-[160%] opacity-0" : "translate-y-0 opacity-100"
+        }`}
+      >
+        <nav
+          aria-label="Primary"
+          className={`flex h-14 items-center justify-between gap-4 rounded-[20px] border border-hairline-silver bg-white/80 py-2 pl-3 pr-2 backdrop-blur-xl transition-all delay-100 duration-700 ease-out ${
+            mounted ? "translate-y-0 opacity-100" : "-translate-y-6 opacity-0"
+          }`}
+        >
+          <a href="#top" className="flex shrink-0 items-center gap-2.5">
+            <span className="flex h-9 w-9 items-center justify-center rounded-[12px] bg-accent font-sf-pro-display text-[16px] font-semibold text-white">
+              {profile.name.charAt(0)}
+            </span>
+            <span className="font-sf-pro-display text-[17px] font-semibold tracking-[0.01em] text-ink">
+              {profile.name}
+            </span>
+          </a>
+
+          <div className="hidden items-center gap-1 md:flex">
+            {links.map((l) => {
+              const isActive = active === l.id;
+              return (
+                <a
+                  key={l.id}
+                  href={l.href}
+                  className={`relative rounded-full px-4 py-2 text-[13px] transition-colors duration-300 ${
+                    isActive ? "font-medium text-ink" : "text-ink/60 hover:text-ink"
+                  }`}
+                >
+                  {isActive && (
+                    <span className="absolute inset-0 rounded-full bg-studio-mist" />
+                  )}
+                  <span className="relative">{l.label}</span>
+                </a>
+              );
+            })}
+          </div>
+
+          <div className="flex items-center gap-2">
+            <a
+              href="#contact"
+              className="hidden rounded-full bg-accent px-5 py-2.5 text-[13px] font-medium text-white transition-all hover:bg-accent-deep active:scale-[0.97] sm:inline-block"
+            >
+              Hire me
+            </a>
+            <button
+              type="button"
+              aria-label="Toggle menu"
+              aria-expanded={open}
+              onClick={() => setOpen(!open)}
+              className="flex h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-studio-mist md:hidden"
+            >
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                {open ? (
+                  <path
+                    d="M4 4l10 10M14 4L4 14"
+                    stroke="#1d1d1f"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                  />
+                ) : (
+                  <path
+                    d="M2.5 5h13M2.5 9h13M2.5 13h13"
+                    stroke="#1d1d1f"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
+        </nav>
+
+        {open && (
+          <div className="mt-2 rounded-[20px] border border-hairline-silver bg-white/95 p-2 backdrop-blur-xl md:hidden">
+            {links.map((l) => (
+              <a
+                key={l.id}
+                href={l.href}
+                onClick={() => setOpen(false)}
+                className={`block rounded-[14px] px-4 py-3 text-[15px] ${
+                  active === l.id ? "bg-studio-mist font-medium text-ink" : "text-ink/70"
+                }`}
+              >
+                {l.label}
+              </a>
+            ))}
+            <a
+              href="#contact"
+              onClick={() => setOpen(false)}
+              className="mt-1 block rounded-[14px] bg-accent px-4 py-3 text-center text-[15px] font-medium text-white"
+            >
+              Hire me
+            </a>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}

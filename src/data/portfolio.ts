@@ -78,7 +78,7 @@ export const projects: Project[] = [
     description:
       "A real-time analytics dashboard helping 200+ small retailers track sales, stock, and staff performance from any device.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Recharts", "WebSocket"],
-    accent: "#0071e3",
+    accent: "#b64400",
     demoUrl: "#",
     sourceUrl: "#",
     caseStudy: {
@@ -136,7 +136,7 @@ export const projects: Project[] = [
     description:
       "A token-based design system unifying 3 products under one visual language — with docs, tests, and Figma parity.",
     tech: ["React", "Storybook", "Radix UI", "Figma API"],
-    accent: "#0066cc",
+    accent: "#b64400",
     demoUrl: "#",
     sourceUrl: "#",
     caseStudy: {
@@ -165,7 +165,7 @@ export const projects: Project[] = [
     description:
       "Real-time transcription and auto-summarized meeting notes, with shareable highlights and action items.",
     tech: ["React", "TypeScript", "WebSocket", "Tailwind CSS"],
-    accent: "#1d1d1f",
+    accent: "#b64400",
     demoUrl: "#",
     sourceUrl: "#",
     caseStudy: {
@@ -328,5 +328,90 @@ export const posts: Post[] = [
     excerpt:
       "What building for keyboard and screen-reader users taught me about good defaults.",
     tags: ["Accessibility", "UX"],
+  },
+];
+
+/* ------------------------------------------------------------------ */
+/* Ways to work together + FAQ                                         */
+/* ------------------------------------------------------------------ */
+
+export interface ServiceTier {
+  name: string;
+  tagline: string;
+  price: string;
+  priceNote: string;
+  features: { label: string; included: boolean | string }[];
+  cta: string;
+  featured?: boolean;
+}
+
+export const services: ServiceTier[] = [
+  {
+    name: "Project",
+    tagline: "Freelance engagement",
+    price: "From $2k",
+    priceNote: "per project",
+    features: [
+      { label: "Design + build, end to end", included: true },
+      { label: "2–6 week timeline", included: true },
+      { label: "Design system included", included: true },
+      { label: "Ongoing maintenance", included: false },
+    ],
+    cta: "Start a project",
+  },
+  {
+    name: "Full-time",
+    tagline: "Join your team",
+    price: "Let's talk",
+    priceNote: "annual",
+    features: [
+      { label: "Embedded in your team", included: true },
+      { label: "Own the frontend roadmap", included: true },
+      { label: "Mentor engineers", included: true },
+      { label: "Available from Q3 2026", included: "Q3 2026" },
+    ],
+    cta: "Hire me",
+    featured: true,
+  },
+  {
+    name: "Advisory",
+    tagline: "Design engineering consult",
+    price: "From $150",
+    priceNote: "per hour",
+    features: [
+      { label: "Audits & code reviews", included: true },
+      { label: "Performance tuning", included: true },
+      { label: "Team workshops", included: true },
+      { label: "Async, flexible hours", included: true },
+    ],
+    cta: "Book a call",
+  },
+];
+
+export interface Faq {
+  q: string;
+  a: string;
+}
+
+export const faqs: Faq[] = [
+  {
+    q: "Are you available for freelance work?",
+    a: "Yes — I'm currently booking projects for Q3 2026. Tell me about your timeline and I'll let you know within 48 hours whether we're a fit.",
+  },
+  {
+    q: "What's your typical project timeline?",
+    a: "Most marketing sites take 2–3 weeks; full web apps take 4–6. I work in weekly milestones so you always see progress, never surprises.",
+  },
+  {
+    q: "Do you work remotely?",
+    a: "Yes. I'm based in Pekanbaru (WIB, UTC+7) and work async-first — written updates, recorded walkthroughs, and overlap hours for calls with any timezone.",
+  },
+  {
+    q: "What does your process look like?",
+    a: "Four phases: Discover (goals, users, constraints), Design (wireframes to hi-fi in Figma), Build (React + TypeScript, reviewed weekly), and Ship (tested, documented, monitored).",
+  },
+  {
+    q: "Can you work with our existing design system?",
+    a: "Absolutely. I can extend yours, audit it for gaps, or build one from scratch — tokens, components, and docs included.",
   },
 ];

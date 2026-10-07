@@ -1,18 +1,16 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
+import LocalNav from "./components/LocalNav";
 import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import CaseStudyModal from "./components/CaseStudyModal";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Testimonials from "./components/Testimonials";
-import Achievements from "./components/Achievements";
-import Blog from "./components/Blog";
-import Playground from "./components/Playground";
-import Contact from "./components/Contact";
+import WorkGallery from "./components/WorkGallery";
+import ThinkVast from "./components/ThinkVast";
+import PowerChapter from "./components/PowerChapter";
+import TechSpecs from "./components/TechSpecs";
+import Quote from "./components/Quote";
+import Compare from "./components/Compare";
+import Faq from "./components/Faq";
+import FinalCta from "./components/FinalCta";
 import Footer from "./components/Footer";
+import CaseStudyModal from "./components/CaseStudyModal";
 import type { Project } from "./data/portfolio";
 
 export default function App() {
@@ -20,19 +18,17 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gallery-white font-sf-pro-text text-ink">
-      <Navbar />
+      <LocalNav />
       <main>
         <Hero />
-        <About />
-        <Projects onCaseStudy={setActiveCase} />
-        <Skills />
-        <Experience />
-        <Education />
-        <Testimonials />
-        <Achievements />
-        <Blog />
-        <Playground />
-        <Contact />
+        <WorkGallery onCaseStudy={setActiveCase} />
+        <ThinkVast />
+        <PowerChapter />
+        <TechSpecs />
+        <Quote />
+        <Compare />
+        <Faq />
+        <FinalCta />
       </main>
       <Footer />
       <CaseStudyModal project={activeCase} onClose={() => setActiveCase(null)} />
