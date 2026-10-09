@@ -7,7 +7,7 @@ export default function PowerChapter() {
       <div className="mx-auto max-w-4xl px-6 py-20 md:py-[90px]">
         <Reveal className="text-center">
           <p className="text-[12px] font-semibold uppercase tracking-[0.08em] text-slate">
-            Experience
+            ♨️Experience
           </p>
           <h2 className="mx-auto mt-3 max-w-2xl font-sf-pro-display text-[32px] font-semibold text-ink md:text-feature-heading">
             Power on full display.
