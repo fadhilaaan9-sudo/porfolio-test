@@ -20,7 +20,7 @@ export default function Hero() {
           style={{ animationDelay: "0ms" }}
         >
           <span className="mr-2 inline-block h-2 w-2 rounded-full bg-accent align-middle" />
-          Available for job
+          Hire Me Please !
         </p>
         <p
           className="rise mt-5 font-sf-pro-display text-product-kicker font-semibold text-ink"
