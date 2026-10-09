@@ -70,7 +70,7 @@ export default function CvSections() {
       <section id="education" className="bg-gallery-white">
         <div className="mx-auto max-w-6xl px-6 py-10">
           <Reveal className="text-center">
-            <Eyebrow>✨Education</Eyebrow>
+            <Eyebrow>✨ Education</Eyebrow>
             <Heading>Strong foundations.</Heading>
           </Reveal>
           <Reveal delay={100}>
@@ -98,7 +98,7 @@ export default function CvSections() {
       <section id="skills" className="bg-studio-mist">
         <div className="mx-auto max-w-6xl px-6 py-10">
           <Reveal className="text-center">
-            <Eyebrow>💎Skills</Eyebrow>
+            <Eyebrow>💎 Skills</Eyebrow>
             <Heading>The toolkit.</Heading>
           </Reveal>
           <div className="mt-10 grid gap-5 md:grid-cols-2">
@@ -129,7 +129,7 @@ export default function CvSections() {
       <section id="certifications" className="bg-gallery-white">
         <div className="mx-auto max-w-6xl px-6 py-10">
           <Reveal className="text-center">
-            <Eyebrow>🎯Certifications</Eyebrow>
+            <Eyebrow>🎯 Certifications</Eyebrow>
             <Heading>Certified proof.</Heading>
           </Reveal>
           <div className="mx-auto mt-10 grid max-w-4xl gap-4">
