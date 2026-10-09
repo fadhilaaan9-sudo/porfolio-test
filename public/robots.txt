@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ferhen.dev/sitemap.xml
+Sitemap: https://porfolio-test-neon.vercel.app/
