@@ -1,13 +1,4 @@
-import CountUp from "./CountUp";
-import ProjectVisual from "./ProjectVisual";
-import Reveal from "./Reveal";
 import WalkingFigure from "./WalkingFigure";
-
-const specs = [
-  { value: 48, suffix: "+", label: "Projects shipped" },
-  { value: 99, suffix: "", label: "Avg. Lighthouse score" },
-  { value: 6, suffix: "+", label: "Years of craft" },
-];
 
 export default function Hero() {
   return (
@@ -59,20 +50,6 @@ export default function Hero() {
           </a>
         </div>
 
-        <Reveal delay={150} className="mx-auto mt-14 max-w-5xl md:mt-20">
-          <ProjectVisual accent="#b64400" variant={0} />
-        </Reveal>
-
-        <div className="mx-auto mt-12 grid max-w-3xl grid-cols-3 gap-6">
-          {specs.map((s, i) => (
-            <Reveal key={s.label} delay={i * 80}>
-              <p className="font-sf-pro-display text-[32px] font-semibold text-ink md:text-[40px]">
-                <CountUp to={s.value} suffix={s.suffix} />
-              </p>
-              <p className="mt-1 text-[12px] text-slate md:text-body-small">{s.label}</p>
-            </Reveal>
-          ))}
-        </div>
       </div>
     </section>
   );
