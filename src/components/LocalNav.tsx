@@ -56,7 +56,7 @@ export default function LocalNav() {
       >
         <nav
           aria-label="Primary"
-          className={`flex h-14 items-center justify-between gap-4 rounded-[20px] border border-hairline-silver bg-white/80 py-2 pl-3 pr-2 backdrop-blur-xl transition-all delay-100 duration-700 ease-out ${
+          className={`relative flex h-14 items-center justify-between gap-4 rounded-[20px] border border-hairline-silver bg-white/80 py-2 pl-3 pr-2 backdrop-blur-xl transition-all delay-100 duration-700 ease-out ${
             mounted ? "translate-y-0 opacity-100" : "-translate-y-6 opacity-0"
           }`}
         >
@@ -69,7 +69,7 @@ export default function LocalNav() {
             </span>
           </a>
 
-          <div className="hidden items-center gap-1 md:flex">
+          <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-1 md:flex">
             {links.map((l) => {
               const isActive = active === l.id;
               return (
