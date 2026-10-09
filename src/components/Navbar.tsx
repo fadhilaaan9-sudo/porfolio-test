@@ -26,14 +26,14 @@ export default function Navbar() {
         scrolled ? "shadow-subtle" : ""
       }`}
     >
-      <nav className="mx-auto flex h-11 max-w-6xl items-center justify-between px-6">
+      <nav className="relative mx-auto flex h-11 max-w-6xl items-center justify-between px-6">
         <a
           href="#top"
           className="font-sf-pro-display text-product-nav-title font-semibold text-ink"
         >
           {profile.name}
         </a>
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 md:flex">
           {links.map((l) => (
             <a
               key={l.href}
