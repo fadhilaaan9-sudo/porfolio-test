@@ -43,17 +43,17 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="rounded-full bg-accent px-7 py-3 text-[15px] font-medium text-white transition-all hover:scale-[1.03] hover:bg-accent-deep active:scale-[0.98]"
+            className="rounded-full bg-black px-7 py-3 text-[15px] font-medium text-white transition-all hover:scale-[1.03] hover:bg-neutral-800 active:scale-[0.98]"
           >
             Hire me
           </a>
-          <a href="#work" className="text-[17px] text-accent">
+          <a href="#work" className="text-[17px] text-ink">
             See the work &rarr;
           </a>
           <a
             href="/Farhan-Fadhila-CV.pdf"
             download="Farhan-Fadhila-CV.pdf"
-            className="text-[17px] text-accent"
+            className="text-[17px] text-ink"
           >
             Download CV &darr;
           </a>
