@@ -16,7 +16,7 @@ export default function Hero() {
       <WalkingFigure />
       <div className="relative mx-auto max-w-6xl px-6 pb-14 pt-28 text-center md:pt-36">
         <p
-          className="rise inline-flex items-center gap-2 rounded-full border border-hairline-silver bg-white px-4 py-1.5 text-[12px] font-semibold tracking-[-0.12px] text-ink"
+          className="rise inline-flex items-center gap-2 rounded-full border border-hairline-silver bg-white px-2.5 py-1 text-[12px] font-semibold tracking-[-0.12px] text-ink"
           style={{ animationDelay: "0ms" }}
         >
           <span className="relative flex h-2 w-2">
