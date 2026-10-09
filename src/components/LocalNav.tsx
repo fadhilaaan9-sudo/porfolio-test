@@ -61,9 +61,11 @@ export default function LocalNav() {
           }`}
         >
           <a href="#top" className="flex shrink-0 items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-[12px] bg-accent font-sf-pro-display text-[16px] font-semibold text-white">
-              {profile.name.charAt(0)}
-            </span>
+            <img
+              src="/avatar.svg"
+              alt="Farhan Fadhila"
+              className="h-9 w-9 rounded-full border border-hairline-silver bg-studio-mist object-cover"
+            />
             <span className="font-sf-pro-display text-[17px] font-semibold tracking-[0.01em] text-ink">
               {profile.name}
             </span>
