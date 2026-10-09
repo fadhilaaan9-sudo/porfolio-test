@@ -23,7 +23,7 @@ export default function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-black opacity-20" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-black" />
           </span>
-          Available for job
+          Hire Me Please !
         </p>
         <p
           className="rise mt-5 font-sf-pro-display text-product-kicker font-semibold text-ink"
