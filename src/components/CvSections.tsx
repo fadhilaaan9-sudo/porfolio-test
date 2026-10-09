@@ -49,8 +49,10 @@ const certifications = [
 
 function Eyebrow({ children }: { children: string }) {
   return (
-    <p className="text-[12px] font-semibold uppercase tracking-[0.08em] text-accent">
-      {children}
+    <p>
+      <span className="inline-block rounded-full bg-black px-4 py-1.5 text-[12px] font-semibold uppercase tracking-[0.08em] text-white">
+        {children}
+      </span>
     </p>
   );
 }
@@ -74,20 +76,47 @@ export default function CvSections() {
             <Heading>Strong foundations.</Heading>
           </Reveal>
           <Reveal delay={100}>
-            <div className="mx-auto mt-10 max-w-3xl rounded-[20px] border border-hairline-silver bg-white p-8 md:p-10">
-              <p className="font-sf-pro-display text-[20px] font-semibold leading-snug text-ink md:text-[24px]">
-                State Islamic University Sultan Syarif Kasim Riau
-              </p>
-              <p className="mt-2 text-[15px] text-slate md:text-[17px]">
-                Bachelor of Informatics Engineering
-              </p>
-              <div className="mt-6 flex flex-wrap items-center gap-3">
-                <span className="rounded-full bg-studio-mist px-4 py-1.5 text-[13px] font-medium text-ink">
-                  GPA 3.71 / 4.00
+            <div className="mx-auto mt-10 max-w-3xl rounded-[20px] border border-hairline-silver bg-white p-8 shadow-subtle md:p-10">
+              <div className="flex items-start gap-5">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[16px] bg-black text-white">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M2 9l10-5 10 5-10 5L2 9z"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M6 11.5V16c0 1.66 2.69 3 6 3s6-1.34 6-3v-4.5"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M22 9v6"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                    />
+                  </svg>
                 </span>
-                <span className="rounded-full bg-studio-mist px-4 py-1.5 text-[13px] font-medium text-ink">
-                  Pekanbaru, Indonesia
-                </span>
+                <div>
+                  <p className="font-sf-pro-display text-[20px] font-semibold leading-snug text-ink md:text-[24px]">
+                    Bachelor of Informatics Engineering
+                  </p>
+                  <p className="mt-1.5 text-[15px] text-slate md:text-[17px]">
+                    State Islamic University Sultan Syarif Kasim Riau
+                  </p>
+                  <div className="mt-5 flex flex-wrap items-center gap-3">
+                    <span className="rounded-full bg-black px-4 py-1.5 text-[13px] font-medium text-white">
+                      GPA 3.71 / 4.00
+                    </span>
+                    <span className="rounded-full bg-studio-mist px-4 py-1.5 text-[13px] font-medium text-ink">
+                      Pekanbaru, Indonesia
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </Reveal>
