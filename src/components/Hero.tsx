@@ -54,6 +54,13 @@ export default function Hero() {
           <a href="#work" className="text-[17px] text-accent">
             See the work &rarr;
           </a>
+          <a
+            href="/Farhan-Fadhila-CV.pdf"
+            download="Farhan-Fadhila-CV.pdf"
+            className="text-[17px] text-accent"
+          >
+            Download CV &darr;
+          </a>
         </div>
 
         <Reveal delay={150} className="mx-auto mt-14 max-w-5xl md:mt-20">
