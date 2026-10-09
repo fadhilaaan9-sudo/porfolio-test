@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import WorkGallery from "./components/WorkGallery";
 import ThinkVast from "./components/ThinkVast";
 import PowerChapter from "./components/PowerChapter";
+import CvSections from "./components/CvSections";
 import TechSpecs from "./components/TechSpecs";
 import Quote from "./components/Quote";
 import Compare from "./components/Compare";
@@ -24,6 +25,7 @@ export default function App() {
         <WorkGallery onCaseStudy={setActiveCase} />
         <ThinkVast />
         <PowerChapter />
+        <CvSections />
         <TechSpecs />
         <Quote />
         <Compare />
