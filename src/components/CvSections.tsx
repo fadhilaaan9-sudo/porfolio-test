@@ -68,7 +68,7 @@ export default function CvSections() {
     <>
       {/* Education */}
       <section id="education" className="bg-gallery-white">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:py-[90px]">
+        <div className="mx-auto max-w-6xl px-6 py-10">
           <Reveal className="text-center">
             <Eyebrow>Education</Eyebrow>
             <Heading>Strong foundations.</Heading>
@@ -96,7 +96,7 @@ export default function CvSections() {
 
       {/* Skills */}
       <section id="skills" className="bg-studio-mist">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:py-[90px]">
+        <div className="mx-auto max-w-6xl px-6 py-10">
           <Reveal className="text-center">
             <Eyebrow>Skills</Eyebrow>
             <Heading>The toolkit.</Heading>
@@ -127,7 +127,7 @@ export default function CvSections() {
 
       {/* Certifications */}
       <section id="certifications" className="bg-gallery-white">
-        <div className="mx-auto max-w-6xl px-6 py-20 md:py-[90px]">
+        <div className="mx-auto max-w-6xl px-6 py-10">
           <Reveal className="text-center">
             <Eyebrow>Certifications</Eyebrow>
             <Heading>Certified proof.</Heading>

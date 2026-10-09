@@ -22,10 +22,10 @@ export default function App() {
       <LocalNav />
       <main>
         <Hero />
+        <CvSections />
         <WorkGallery onCaseStudy={setActiveCase} />
         <ThinkVast />
         <PowerChapter />
-        <CvSections />
         <TechSpecs />
         <Quote />
         <Compare />
