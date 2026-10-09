@@ -29,14 +29,14 @@ export default function Hero() {
           className="rise mx-auto mt-4 max-w-4xl font-sf-pro-display text-[44px] font-semibold leading-[1.04] tracking-[-0.02em] text-ink sm:text-[60px] lg:text-hero-display"
           style={{ animationDelay: "190ms" }}
         >
-          Interfaces that feel inevitable.
+          Full-stack web developer.
         </h1>
         <p
           className="rise mx-auto mt-6 max-w-2xl text-[19px] leading-[1.4] tracking-[0.012em] text-slate md:text-[21px]"
           style={{ animationDelay: "300ms" }}
         >
-          I&apos;m a {profile.role.toLowerCase()} — I design and build fast,
-          thoughtful web experiences, from first sketch to production.
+          I design and build fast, thoughtful web experiences — including
+          campus systems used by 1,250 students and lecturers.
         </p>
         <div
           className="rise mt-8 flex flex-wrap items-center justify-center gap-x-8 gap-y-4"
