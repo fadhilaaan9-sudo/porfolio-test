@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { profile } from "../data/portfolio";
 
 const links = [
-  { label: "Education", href: "#work", id: "work" },
-  { label: "Experience", href: "#work", id: "work" },
-  { label: "Skills", href: "#about", id: "about" },
-  { label: "Certifications", href: "#services", id: "services" },
+  { label: "Education", href: "#education", id: "education" },
+  { label: "Experience", href: "#experience", id: "experience" },
+  { label: "Skills", href: "#skills", id: "skills" },
+  { label: "Certifications", href: "#certifications", id: "certifications" },
 ];
 
 export default function LocalNav() {
@@ -31,7 +31,7 @@ export default function LocalNav() {
   }, [open]);
 
   useEffect(() => {
-    const ids = ["top", "work", "about", "experience", "services", "faq", "contact"];
+    const ids = ["top", "work", "about", "experience", "education", "skills", "certifications", "services", "faq", "contact"];
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
@@ -91,6 +91,23 @@ export default function LocalNav() {
 
           <div className="flex items-center gap-2">
             <a
+              href="/Farhan-Fadhila-CV.pdf"
+              download="Farhan-Fadhila-CV.pdf"
+              aria-label="Download CV"
+              title="Download CV"
+              className="hidden h-10 w-10 items-center justify-center rounded-full text-ink/70 transition-colors hover:bg-studio-mist hover:text-ink sm:flex"
+            >
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path
+                  d="M8 2v8m0 0L4.5 6.5M8 10l3.5-3.5M2.5 13.5h11"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+            <a
               href="#contact"
               className="hidden rounded-full bg-accent px-5 py-2.5 text-[13px] font-medium text-white transition-all hover:bg-accent-deep active:scale-[0.97] sm:inline-block"
             >
@@ -144,6 +161,13 @@ export default function LocalNav() {
               className="mt-1 block rounded-[14px] bg-accent px-4 py-3 text-center text-[15px] font-medium text-white"
             >
               Hire me
+            </a>
+            <a
+              href="/Farhan-Fadhila-CV.pdf"
+              download="Farhan-Fadhila-CV.pdf"
+              className="mt-1 block rounded-[14px] border border-hairline-silver bg-white px-4 py-3 text-center text-[15px] font-medium text-ink"
+            >
+              Download CV
             </a>
           </div>
         )}
