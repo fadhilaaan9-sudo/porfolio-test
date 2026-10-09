@@ -25,12 +25,6 @@ export default function Hero() {
           </span>
           Hire Me Please !
         </p>
-        <p
-          className="rise mt-5 font-sf-pro-display text-product-kicker font-semibold text-ink"
-          style={{ animationDelay: "90ms" }}
-        >
-          {profile.name}
-        </p>
         <h1
           className="rise mx-auto mt-4 max-w-4xl font-sf-pro-display text-[44px] font-semibold leading-[1.04] tracking-[-0.02em] text-ink sm:text-[60px] lg:text-hero-display"
           style={{ animationDelay: "190ms" }}
