@@ -16,11 +16,14 @@ export default function Hero() {
       <WalkingFigure />
       <div className="relative mx-auto max-w-6xl px-6 pb-14 pt-28 text-center md:pt-36">
         <p
-          className="rise text-[12px] font-semibold tracking-[-0.12px] text-accent"
+          className="rise inline-flex items-center gap-2 rounded-full border border-hairline-silver bg-white px-4 py-1.5 text-[12px] font-semibold tracking-[-0.12px] text-ink"
           style={{ animationDelay: "0ms" }}
         >
-          <span className="mr-2 inline-block h-2 w-2 rounded-full bg-accent align-middle" />
-          Hire Me Please !
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-black opacity-20" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-black" />
+          </span>
+          Available for job
         </p>
         <p
           className="rise mt-5 font-sf-pro-display text-product-kicker font-semibold text-ink"

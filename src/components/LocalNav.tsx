@@ -61,9 +61,11 @@ export default function LocalNav() {
           }`}
         >
           <a href="#top" className="flex shrink-0 items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-[12px] bg-accent font-sf-pro-display text-[16px] font-semibold text-white">
-              {profile.name.charAt(0)}
-            </span>
+            <img
+              src="/avatar.svg"
+              alt="Farhan Fadhila"
+              className="h-9 w-9 rounded-full border border-hairline-silver bg-studio-mist object-cover"
+            />
             <span className="font-sf-pro-display text-[17px] font-semibold tracking-[0.01em] text-ink">
               {profile.name}
             </span>
@@ -109,7 +111,7 @@ export default function LocalNav() {
             </a>
             <a
               href="#contact"
-              className="hidden rounded-full bg-accent px-5 py-2.5 text-[13px] font-medium text-white transition-all hover:bg-accent-deep active:scale-[0.97] sm:inline-block"
+              className="hidden rounded-full bg-black px-5 py-2.5 text-[13px] font-medium text-white transition-all hover:bg-neutral-800 active:scale-[0.97] sm:inline-block"
             >
               Hire me
             </a>
@@ -158,7 +160,7 @@ export default function LocalNav() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-1 block rounded-[14px] bg-accent px-4 py-3 text-center text-[15px] font-medium text-white"
+              className="mt-1 block rounded-[14px] bg-black px-4 py-3 text-center text-[15px] font-medium text-white"
             >
               Hire me
             </a>
