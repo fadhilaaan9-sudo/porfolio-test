@@ -2,7 +2,6 @@ import CountUp from "./CountUp";
 import ProjectVisual from "./ProjectVisual";
 import Reveal from "./Reveal";
 import WalkingFigure from "./WalkingFigure";
-import { profile } from "../data/portfolio";
 
 const specs = [
   { value: 48, suffix: "+", label: "Projects shipped" },
