@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { profile } from "../data/portfolio";
 
 const links = [
-  { label: "Work", href: "#work", id: "work" },
-  { label: "About", href: "#about", id: "about" },
-  { label: "Services", href: "#services", id: "services" },
-  { label: "FAQ", href: "#faq", id: "faq" },
+  { label: "Education", href: "#work", id: "work" },
+  { label: "Experience", href: "#work", id: "work" },
+  { label: "Skills", href: "#about", id: "about" },
+  { label: "Certifications", href: "#services", id: "services" },
 ];
 
 export default function LocalNav() {
