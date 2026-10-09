@@ -57,12 +57,12 @@ export interface Post {
 /* ------------------------------------------------------------------ */
 
 export const profile = {
-  name: "Ferhen",
+  name: "Farhan Fadhila",
   role: "Frontend Developer & UI Engineer",
   location: "Pekanbaru, Indonesia",
-  email: "hello@ferhen.dev",
+  email: "farhanfd.112003@gmail.com",
   headline: "I design and build fast, thoughtful interfaces for the web.",
-  github: "https://github.com/ferhen",
+  github: "https://github.com/FARHANFADHILA",
   linkedin: "https://linkedin.com/in/ferhen",
   twitter: "https://x.com/ferhen",
   dribbble: "https://dribbble.com/ferhen",
