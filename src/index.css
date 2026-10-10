@@ -58,23 +58,6 @@
   --text-hero-display--line-height: 1.05;
   --text-hero-display--letter-spacing: -1.2px;
 
-  /* Spacing — 4px base unit */
-  --spacing-4: 4px;
-  --spacing-8: 8px;
-  --spacing-12: 12px;
-  --spacing-16: 16px;
-  --spacing-20: 20px;
-  --spacing-24: 24px;
-  --spacing-28: 28px;
-  --spacing-32: 32px;
-  --spacing-40: 40px;
-  --spacing-48: 48px;
-  --spacing-52: 52px;
-  --spacing-64: 64px;
-  --spacing-76: 76px;
-  --spacing-80: 80px;
-  --spacing-128: 128px;
-  --spacing-144: 144px;
 
   /* Border radius */
   --radius-md: 4px;
