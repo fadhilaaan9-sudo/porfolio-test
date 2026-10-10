@@ -248,7 +248,7 @@ export default function CvSections() {
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {skillGroups.map((g, i) => (
               <Reveal key={g.title} delay={i * 80}>
-                <div className="h-full rounded-[24px] border border-hairline-silver bg-white p-7 md:p-8">
+                <div className="h-full rounded-[24px] border border-hairline-silver bg-white p-8 md:p-10">
                   <p className="font-sf-pro-display text-[20px] font-semibold text-ink">
                     {g.title}
                   </p>
