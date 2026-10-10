@@ -6,7 +6,7 @@ export default function Footer() {
           P.S. This site practices what it preaches — semantic HTML, structured
           data, meta tags, sitemap, and a 100-point Lighthouse target.{" "}
           <a
-            href="https://pagespeed.web.dev/analysis?url=https://ferhen.dev/"
+            href="https://pagespeed.web.dev/analysis?url=https://porfolio-test-neon.vercel.app/"
             target="_blank"
             rel="noreferrer"
             className="text-accent"

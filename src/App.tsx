@@ -1,13 +1,8 @@
 import { useState } from "react";
 import LocalNav from "./components/LocalNav";
 import Hero from "./components/Hero";
-import WorkGallery from "./components/WorkGallery";
-import ThinkVast from "./components/ThinkVast";
 import PowerChapter from "./components/PowerChapter";
 import CvSections from "./components/CvSections";
-import TechSpecs from "./components/TechSpecs";
-import Quote from "./components/Quote";
-import Compare from "./components/Compare";
 import Faq from "./components/Faq";
 import FinalCta from "./components/FinalCta";
 import Footer from "./components/Footer";
@@ -23,12 +18,7 @@ export default function App() {
       <main>
         <Hero />
         <CvSections />
-        <WorkGallery onCaseStudy={setActiveCase} />
-        <ThinkVast />
         <PowerChapter />
-        <TechSpecs />
-        <Quote />
-        <Compare />
         <Faq />
         <FinalCta />
       </main>
