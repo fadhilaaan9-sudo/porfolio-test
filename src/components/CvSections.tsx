@@ -245,10 +245,10 @@ export default function CvSections() {
             <Eyebrow>💎 Skills</Eyebrow>
             <Heading>The toolkit.</Heading>
           </Reveal>
-          <div className="mt-10 grid items-start gap-5 md:grid-cols-2">
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
             {skillGroups.map((g, i) => (
               <Reveal key={g.title} delay={i * 80}>
-                <div className="rounded-[24px] border border-hairline-silver bg-white p-7 md:p-8">
+                <div className="h-full rounded-[24px] border border-hairline-silver bg-white p-7 md:p-8">
                   <p className="font-sf-pro-display text-[20px] font-semibold text-ink">
                     {g.title}
                   </p>
