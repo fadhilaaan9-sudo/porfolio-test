@@ -368,7 +368,7 @@ export const services: ServiceTier[] = [
       { label: "Embedded in your team", included: true },
       { label: "Own the frontend roadmap", included: true },
       { label: "Mentor engineers", included: true },
-      { label: "Available from Q3 2026", included: "Q3 2026" },
+      { label: "Available from", included: "Q3 2026" },
     ],
     cta: "Hire me",
     featured: true,
