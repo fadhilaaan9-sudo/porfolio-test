@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Reveal from "./Reveal";
+import WalkingFigure from "./WalkingFigure";
 
 const ICON_PATHS: Record<string, ReactNode> = {
   code: (
@@ -239,7 +240,11 @@ export default function CvSections() {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="bg-studio-mist">
+      <section id="skills" className="relative bg-studio-mist">
+      <WalkingFigure
+        variant="sit"
+        className="bottom-4 right-4 hidden w-[100px] opacity-25 md:block md:w-[130px] lg:right-12"
+      />
         <div className="mx-auto max-w-6xl px-6 py-10">
           <Reveal className="text-center">
             <Eyebrow>💎 Skills</Eyebrow>
