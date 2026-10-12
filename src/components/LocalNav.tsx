@@ -111,7 +111,7 @@ export default function LocalNav() {
             </a>
             <a
               href="#contact"
-              className="hidden rounded-full bg-black px-5 py-2.5 text-[13px] font-medium text-white transition-all hover:bg-neutral-800 active:scale-[0.97] sm:inline-block"
+              className="hidden rounded-[8px] bg-black px-5 py-1.5 text-[13px] font-medium text-white transition-all hover:bg-neutral-800 active:scale-[0.97] sm:inline-block"
             >
               Hire me
             </a>
