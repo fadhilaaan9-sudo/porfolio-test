@@ -34,7 +34,14 @@ export default function PowerChapter() {
                   <h3 className="font-sf-pro-display text-[21px] font-semibold text-ink md:text-[24px]">
                     {e.role}
                   </h3>
-                  <p className="mt-1 text-[15px] text-accent">{e.company}</p>
+                  <p className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-2 text-[15px]">
+                    <span className="text-accent">{e.company}</span>
+                    {e.type && (
+                      <span className="rounded-full bg-studio-mist px-3 py-1 text-[12px] font-medium text-ink">
+                        {e.type}
+                      </span>
+                    )}
+                  </p>
                   <p className="mt-3 max-w-2xl text-body-small text-slate">
                     {e.description}
                   </p>

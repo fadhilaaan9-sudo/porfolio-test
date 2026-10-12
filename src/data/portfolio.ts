@@ -30,6 +30,7 @@ export interface ExperienceItem {
   company: string;
   description: string;
   current?: boolean;
+  type?: string;
 }
 
 export interface Testimonial {
@@ -216,6 +217,7 @@ export const experience: ExperienceItem[] = [
   {
     period: "2024 — Present",
     role: "Senior Frontend Developer",
+    type: "Organization",
     company: "Kirana Digital",
     description:
       "Leading frontend for a SaaS analytics suite used by 2,000+ businesses. Own the design system, mentor 4 engineers, and guard the performance budget.",
@@ -224,6 +226,7 @@ export const experience: ExperienceItem[] = [
   {
     period: "2022 — 2024",
     role: "Frontend Developer",
+    type: "Organization",
     company: "PixelForge Studio",
     description:
       "Shipped 12 client websites and web apps, from marketing pages to full e-commerce. Raised the studio's average Lighthouse score from 71 to 96.",
@@ -231,6 +234,7 @@ export const experience: ExperienceItem[] = [
   {
     period: "2021 — 2022",
     role: "UI Engineer Intern",
+    type: "Internship",
     company: "BrightLab",
     description:
       "Built internal dashboards and learned the craft: semantic HTML, design tokens, and a healthy code-review culture.",
@@ -238,6 +242,7 @@ export const experience: ExperienceItem[] = [
   {
     period: "2020 — 2021",
     role: "Freelance Web Developer",
+    type: "Freelance",
     company: "Self-employed",
     description:
       "Delivered 20+ projects for local businesses — landing pages, company profiles, and small online stores.",
