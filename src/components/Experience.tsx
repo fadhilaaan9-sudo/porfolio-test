@@ -8,7 +8,7 @@ export default function Experience() {
       id="experience"
       kicker="Journey"
       title="Experience"
-      description="Six years of shipping — from freelance gigs to leading frontend for a SaaS used by thousands."
+      description="Six years of shipping - from freelance gigs to leading frontend for a SaaS used by thousands."
     >
       <ol className="ml-2 space-y-10 border-l border-hairline-silver">
         {experience.map((e, i) => (
