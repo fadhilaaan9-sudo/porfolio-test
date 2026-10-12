@@ -38,9 +38,6 @@ export default function Hero() {
           >
             Hire me
           </a>
-          <a href="#work" className="text-[17px] text-ink">
-            See the work &rarr;
-          </a>
           <a
             href="/Farhan-Fadhila-CV.pdf"
             download="Farhan-Fadhila-CV.pdf"
