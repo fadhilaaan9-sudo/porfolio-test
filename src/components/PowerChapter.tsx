@@ -4,7 +4,7 @@ import { experience } from "../data/portfolio";
 export default function PowerChapter() {
   return (
     <section id="experience" className="border-t border-hairline-silver bg-gallery-white">
-      <div className="mx-auto max-w-4xl px-6 py-20 md:py-[90px]">
+      <div className="mx-auto max-w-4xl px-6 py-10">
         <Reveal className="text-center">
           <p className="text-[14px] font-semibold uppercase tracking-[0.08em] text-ink">
             ♨️ Experience
