@@ -13,7 +13,7 @@ export default function PowerChapter() {
             Power on full display.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-body text-slate">
-            Six years of shipping — from freelance gigs to leading frontend for a SaaS
+            Six years of shipping - from freelance gigs to leading frontend for a SaaS
             used by thousands.
           </p>
         </Reveal>
