@@ -289,7 +289,7 @@ export default function CvSections() {
             {certifications.map((c, i) => (
               <Reveal key={c.title} delay={i * 80}>
                 <div className="flex items-center gap-4 rounded-[8px] border border-hairline-silver bg-white p-5 md:p-6">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-studio-mist text-ink">
                     <svg
                       width="18"
                       height="18"
