@@ -47,9 +47,40 @@ export default function FinalCta() {
             <button
               type="button"
               onClick={handleCopy}
-              className="rounded-full border border-hairline-silver bg-white px-4 py-1.5 text-[13px] font-medium text-ink transition-colors hover:bg-studio-mist active:scale-[0.97]"
+              aria-label="Salin alamat email"
+              title="Salin alamat email"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-hairline-silver bg-white text-ink transition-colors hover:bg-studio-mist active:scale-[0.97]"
             >
-              {copied ? "Tersalin!" : "Salin"}
+              {copied ? (
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+              ) : (
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <rect x="9" y="9" width="13" height="13" rx="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+                </svg>
+              )}
             </button>
           </div>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
