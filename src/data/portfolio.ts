@@ -215,7 +215,7 @@ export const skillGroups: SkillGroup[] = [
 
 export const experience: ExperienceItem[] = [
   {
-    period: "2024 — Present",
+    period: "2024 - Present",
     role: "Senior Frontend Developer",
     type: "Organization",
     company: "Kirana Digital",
@@ -224,7 +224,7 @@ export const experience: ExperienceItem[] = [
     current: true,
   },
   {
-    period: "2022 — 2024",
+    period: "2022 - 2024",
     role: "Frontend Developer",
     type: "Organization",
     company: "PixelForge Studio",
@@ -232,7 +232,7 @@ export const experience: ExperienceItem[] = [
       "Shipped 12 client websites and web apps, from marketing pages to full e-commerce. Raised the studio's average Lighthouse score from 71 to 96.",
   },
   {
-    period: "2021 — 2022",
+    period: "2021 - 2022",
     role: "UI Engineer Intern",
     type: "Internship",
     company: "BrightLab",
@@ -240,21 +240,21 @@ export const experience: ExperienceItem[] = [
       "Built internal dashboards and learned the craft: semantic HTML, design tokens, and a healthy code-review culture.",
   },
   {
-    period: "2020 — 2021",
+    period: "2020 - 2021",
     role: "Freelance Web Developer",
     type: "Freelance",
     company: "Self-employed",
     description:
-      "Delivered 20+ projects for local businesses — landing pages, company profiles, and small online stores.",
+      "Delivered 20+ projects for local businesses - landing pages, company profiles, and small online stores.",
   },
 ];
 
 export const education = {
   degree: "B.Sc. in Informatics Engineering",
   school: "Universitas Nusantara",
-  period: "2017 — 2021",
+  period: "2017 - 2021",
   description:
-    "Focused on software engineering and human–computer interaction. Graduated with honors.",
+    "Focused on software engineering and human – computer interaction. Graduated with honors.",
 };
 
 export const certifications = [
