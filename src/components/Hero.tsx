@@ -25,7 +25,7 @@ export default function Hero() {
           className="rise mx-auto mt-6 max-w-2xl text-[19px] leading-[1.4] tracking-[0.012em] text-slate md:text-[21px]"
           style={{ animationDelay: "300ms" }}
         >
-          I design and build fast, thoughtful web experiences — including
+          I design and build fast, thoughtful web experiences - including
           campus systems used by 1,250 students and lecturers.
         </p>
         <div
@@ -34,7 +34,7 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="rounded-full bg-black px-7 py-3 text-[15px] font-medium text-white transition-all hover:scale-[1.03] hover:bg-neutral-800 active:scale-[0.98]"
+            className="rounded-[8px] bg-black px-5 py-1.5 text-[15px] font-medium text-white transition-all hover:scale-[1.03] hover:bg-neutral-800 active:scale-[0.98]"
           >
             Hire me
           </a>
