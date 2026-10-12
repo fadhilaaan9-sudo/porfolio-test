@@ -155,7 +155,7 @@ const skillGroups = [
   },
   {
     title: "Core Competencies",
-    description: "How I work — from system design decisions to leading technical teams.",
+    description: "How I work - from system design decisions to leading technical teams.",
     items: [
       { name: "Full-Stack Web Development", icon: "layers" },
       { name: "System Architecture", icon: "box" },
@@ -175,19 +175,19 @@ const skillGroups = [
 
 const certifications = [
   {
-    title: "Intermediate Assistant Web Developer — Nasional",
+    title: "Intermediate Assistant Web Developer - Nasional",
     issuer: "KOMDIGI Digital Talent Academy",
   },
   {
-    title: "Intermediate Associate Network Administrator — Nasional",
+    title: "Intermediate Associate Network Administrator - Nasional",
     issuer: "KOMDIGI Digital Talent Academy",
   },
   {
-    title: "HCIA-Cloud Service",
+    title: "HCIA - Cloud Service",
     issuer: "Huawei ICT Academy",
   },
   {
-    title: "Health — AI Agent for Healthcare",
+    title: "Health - AI Agent for Healthcare",
     issuer: "HACKTIV8 x IBM SkillsBuild",
   },
 ];
@@ -219,7 +219,7 @@ export default function CvSections() {
             <Heading>Strong foundations.</Heading>
           </Reveal>
           <Reveal delay={100}>
-            <div className="mx-auto mt-10 max-w-3xl rounded-[20px] border border-hairline-silver bg-white p-8 md:p-10">
+            <div className="mx-auto mt-10 max-w-3xl rounded-[8px] border border-hairline-silver bg-white p-8 md:px-5 md:py-5">
               <p className="font-sf-pro-display text-[20px] font-semibold leading-snug text-ink md:text-[24px]">
                 State Islamic University Sultan Syarif Kasim Riau
               </p>
@@ -227,10 +227,10 @@ export default function CvSections() {
                 Bachelor of Informatics Engineering
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <span className="rounded-full bg-studio-mist px-4 py-1.5 text-[13px] font-medium text-ink">
+                <span className="rounded-[8px] bg-studio-mist px-4 py-1.5 text-[13px] font-medium text-ink">
                   GPA 3.71 / 4.00
                 </span>
-                <span className="rounded-full bg-studio-mist px-4 py-1.5 text-[13px] font-medium text-ink">
+                <span className="rounded-[8px] bg-studio-mist px-4 py-1.5 text-[13px] font-medium text-ink">
                   Pekanbaru, Indonesia
                 </span>
               </div>
@@ -253,7 +253,7 @@ export default function CvSections() {
           <div className="mt-10 grid gap-5 md:grid-cols-2">
             {skillGroups.map((g, i) => (
               <Reveal key={g.title} delay={i * 80}>
-                <div className="h-full rounded-[24px] border border-hairline-silver bg-white p-8 md:p-10">
+                <div className="h-full rounded-[8px] border border-hairline-silver bg-white p-8 md:p-10">
                   <p className="font-sf-pro-display text-[20px] font-semibold text-ink">
                     {g.title}
                   </p>
@@ -264,7 +264,7 @@ export default function CvSections() {
                     {g.items.map((item) => (
                       <span
                         key={item.name}
-                        className="inline-flex items-center gap-2 rounded-full border border-hairline-silver bg-gallery-white px-4 py-1.5 text-[14px] text-ink"
+                        className="inline-flex items-center gap-2 rounded-[5px] border border-hairline-silver bg-gallery-white px-4 py-1.5 text-[14px] text-ink"
                       >
                         <SkillPillIcon icon={item.icon} />
                         {item.name}
@@ -288,7 +288,7 @@ export default function CvSections() {
           <div className="mx-auto mt-10 grid max-w-4xl gap-4">
             {certifications.map((c, i) => (
               <Reveal key={c.title} delay={i * 80}>
-                <div className="flex items-center gap-4 rounded-[20px] border border-hairline-silver bg-white p-5 md:p-6">
+                <div className="flex items-center gap-4 rounded-[8px] border border-hairline-silver bg-white p-5 md:p-6">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/10 text-accent">
                     <svg
                       width="18"
