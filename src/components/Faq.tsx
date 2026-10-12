@@ -6,7 +6,7 @@ export default function Faq() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-studio-mist">
+    <section id="faq" className="border-t border-hairline-silver bg-studio-mist">
       <div className="mx-auto max-w-3xl px-6 py-20 md:py-[90px]">
         <Reveal className="text-center">
           <p className="text-[12px] font-semibold uppercase tracking-[0.08em] text-slate">
