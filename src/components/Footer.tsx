@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-studio-mist">
+    <footer className="border-t border-hairline-silver bg-studio-mist">
       <div className="mx-auto max-w-6xl px-6 pb-10 pt-12">
         <p className="border-b border-hairline-silver pb-8 text-[13px] leading-[1.6] text-slate">
           P.S. This site practices what it preaches — semantic HTML, structured
