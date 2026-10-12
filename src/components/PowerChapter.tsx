@@ -12,10 +12,6 @@ export default function PowerChapter() {
           <h2 className="mx-auto mt-3 max-w-2xl font-sf-pro-display text-[32px] font-semibold text-ink md:text-feature-heading">
             Power on full display.
           </h2>
-          <p className="mx-auto mt-4 max-w-xl text-body text-slate">
-            Six years of shipping - from freelance gigs to leading frontend for a SaaS
-            used by thousands.
-          </p>
         </Reveal>
 
         <div className="mt-12">
