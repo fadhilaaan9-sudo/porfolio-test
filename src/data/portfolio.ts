@@ -30,6 +30,7 @@ export interface ExperienceItem {
   company: string;
   description: string;
   current?: boolean;
+  type?: string;
 }
 
 export interface Testimonial {
@@ -103,6 +104,7 @@ export const projects: Project[] = [
     name: "KopiKita",
     year: "2024",
     role: "Frontend Developer",
+    type: "Organization",
     tagline: "Ordering & loyalty web app for a coffee chain",
     description:
       "End-to-end ordering experience for a 15-outlet coffee chain — browse the menu, customize drinks, pay, and collect loyalty points.",
@@ -216,6 +218,7 @@ export const experience: ExperienceItem[] = [
   {
     period: "2024 — Present",
     role: "Senior Frontend Developer",
+    type: "Organization",
     company: "Kirana Digital",
     description:
       "Leading frontend for a SaaS analytics suite used by 2,000+ businesses. Own the design system, mentor 4 engineers, and guard the performance budget.",
@@ -231,6 +234,7 @@ export const experience: ExperienceItem[] = [
   {
     period: "2021 — 2022",
     role: "UI Engineer Intern",
+    type: "Internship",
     company: "BrightLab",
     description:
       "Built internal dashboards and learned the craft: semantic HTML, design tokens, and a healthy code-review culture.",
@@ -238,6 +242,7 @@ export const experience: ExperienceItem[] = [
   {
     period: "2020 — 2021",
     role: "Freelance Web Developer",
+    type: "Freelance",
     company: "Self-employed",
     description:
       "Delivered 20+ projects for local businesses — landing pages, company profiles, and small online stores.",
