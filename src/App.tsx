@@ -18,7 +18,6 @@ export default function App() {
         <FinalCta />
       </main>
       <Footer />
-      {/* <CaseStudyModal project={activeCase} onClose={() => setActiveCase(null)} /> */}
     </div>
   );
 }
