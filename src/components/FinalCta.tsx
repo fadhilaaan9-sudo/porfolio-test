@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Reveal from "./Reveal";
 import WalkingFigure from "./WalkingFigure";
 import { profile } from "../data/portfolio";
@@ -10,6 +11,18 @@ const socials = [
 ];
 
 export default function FinalCta() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(profile.email);
+      setCopied(true);
+      window.setTimeout(() => setCopied(false), 2000);
+    } catch {
+      /* clipboard tidak tersedia */
+    }
+  };
+
   return (
     <section id="contact" className="relative border-t border-hairline-silver bg-gallery-white">
       <WalkingFigure
@@ -24,13 +37,20 @@ export default function FinalCta() {
           <p className="mx-auto mt-6 max-w-xl text-[19px] leading-[1.4] text-slate md:text-[21px]">
             Have a project, a role, or just an idea? My inbox is always open.
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-3">
             <a
               href={`mailto:${profile.email}`}
-              className="inline-block rounded-full bg-accent px-10 py-4 text-[17px] font-medium text-white transition-all hover:scale-[1.03] hover:bg-accent-deep"
+              className="text-[19px] font-bold italic text-ink underline underline-offset-4 md:text-[21px]"
             >
               {profile.email}
             </a>
+            <button
+              type="button"
+              onClick={handleCopy}
+              className="rounded-full border border-hairline-silver bg-white px-4 py-1.5 text-[13px] font-medium text-ink transition-colors hover:bg-studio-mist active:scale-[0.97]"
+            >
+              {copied ? "Tersalin!" : "Salin"}
+            </button>
           </div>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
             {socials.map((s) => (
