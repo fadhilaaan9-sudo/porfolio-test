@@ -11,7 +11,7 @@ const socials = [
 
 export default function FinalCta() {
   return (
-    <section id="contact" className="relative bg-gallery-white">
+    <section id="contact" className="relative border-t border-hairline-silver bg-gallery-white">
       <WalkingFigure
         variant="wave"
         className="bottom-6 left-4 hidden w-[95px] sm:block md:bottom-10 md:left-12 md:w-[135px]"
