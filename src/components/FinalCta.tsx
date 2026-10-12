@@ -27,7 +27,7 @@ export default function FinalCta() {
           <div className="mt-10">
             <a
               href={`mailto:${profile.email}`}
-              className="inline-block rounded-full bg-accent px-10 py-4 text-[17px] font-medium text-white transition-all hover:scale-[1.03] hover:bg-accent-deep"
+              className="inline-block rounded-[8px] bg-accent px-5 py-2.5 text-[17px] font-medium text-white transition-all hover:scale-[1.03] hover:bg-accent-deep"
             >
               {profile.email}
             </a>
