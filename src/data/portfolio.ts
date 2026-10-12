@@ -104,7 +104,6 @@ export const projects: Project[] = [
     name: "KopiKita",
     year: "2024",
     role: "Frontend Developer",
-    type: "Organization",
     tagline: "Ordering & loyalty web app for a coffee chain",
     description:
       "End-to-end ordering experience for a 15-outlet coffee chain — browse the menu, customize drinks, pay, and collect loyalty points.",
@@ -227,6 +226,7 @@ export const experience: ExperienceItem[] = [
   {
     period: "2022 — 2024",
     role: "Frontend Developer",
+    type: "Organization",
     company: "PixelForge Studio",
     description:
       "Shipped 12 client websites and web apps, from marketing pages to full e-commerce. Raised the studio's average Lighthouse score from 71 to 96.",
