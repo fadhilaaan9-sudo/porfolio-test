@@ -212,7 +212,7 @@ export default function CvSections() {
   return (
     <>
       {/* Education */}
-      <section id="education" className="bg-gallery-white">
+      <section id="education" className="border-t border-hairline-silver bg-gallery-white">
         <div className="mx-auto max-w-6xl px-6 py-10">
           <Reveal className="text-center">
             <Eyebrow>✨ Education</Eyebrow>
@@ -240,7 +240,7 @@ export default function CvSections() {
       </section>
 
       {/* Skills */}
-      <section id="skills" className="relative bg-studio-mist">
+      <section id="skills" className="relative border-t border-hairline-silver bg-gallery-white">
       <WalkingFigure
         variant="sit"
         className="bottom-4 right-4 hidden w-[100px] opacity-25 md:block md:w-[130px] lg:right-12"
@@ -279,7 +279,7 @@ export default function CvSections() {
       </section>
 
       {/* Certifications */}
-      <section id="certifications" className="bg-gallery-white">
+      <section id="certifications" className="border-t border-hairline-silver bg-gallery-white">
         <div className="mx-auto max-w-6xl px-6 py-10">
           <Reveal className="text-center">
             <Eyebrow>🎯 Certifications</Eyebrow>
