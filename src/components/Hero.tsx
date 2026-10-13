@@ -2,9 +2,9 @@ import WalkingFigure from "./WalkingFigure";
 
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden bg-gallery-white">
+    <section id="top" className="relative flex min-h-svh flex-col justify-center overflow-hidden bg-gallery-white">
       <WalkingFigure />
-      <div className="relative mx-auto max-w-6xl px-6 pb-14 pt-28 text-center md:pt-36">
+      <div className="relative mx-auto max-w-6xl px-6 py-24 text-center">
         <p
           className="rise inline-flex items-center gap-2 rounded-full border border-hairline-silver bg-white px-2.5 py-1 text-[12px] font-semibold tracking-[-0.12px] text-ink"
           style={{ animationDelay: "0ms" }}
