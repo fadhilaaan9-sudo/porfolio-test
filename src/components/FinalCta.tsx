@@ -5,9 +5,7 @@ import { profile } from "../data/portfolio";
 
 const socials = [
   { label: "GitHub", href: profile.github },
-  { label: "LinkedIn", href: profile.linkedin },
-  { label: "X", href: profile.twitter },
-  { label: "Dribbble", href: profile.dribbble },
+  { label: "Instagram", href: profile.instagram },
 ];
 
 export default function FinalCta() {
@@ -90,7 +88,7 @@ export default function FinalCta() {
                 href={s.href}
                 target="_blank"
                 rel="noreferrer"
-                className="text-[15px] text-accent"
+                className="text-[15px] text-ink"
               >
                 {s.label}
               </a>
