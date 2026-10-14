@@ -20,9 +20,7 @@ export const profile = {
   email: "farhanfd.112003@gmail.com",
   headline: "I design and build fast, thoughtful interfaces for the web.",
   github: "https://github.com/FARHANFADHILA",
-  linkedin: "https://linkedin.com/in/ferhen",
-  twitter: "https://x.com/ferhen",
-  dribbble: "https://dribbble.com/ferhen",
+  instagram: "https://instagram.com/frhan_fdh",
 };
 
 export const experience: ExperienceItem[] = [
