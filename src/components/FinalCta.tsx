@@ -29,7 +29,7 @@ export default function FinalCta() {
       />
       <div className="mx-auto max-w-4xl px-6 py-24 text-center md:py-[140px]">
         <Reveal>
-          <h2 className="font-sf-pro-display text-[56px] font-semibold leading-[1.02] tracking-[-0.02em] text-ink md:text-[80px]">
+          <h2 className="font-sf-pro-display text-[40px] font-semibold leading-[1.02] tracking-[-0.02em] text-ink sm:text-[56px] md:text-[80px]">
             Let&apos;s build.
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-[19px] leading-[1.4] text-slate md:text-[21px]">
